@@ -6,7 +6,8 @@ import os
 import pymongo
 from pymongo.mongo_client import MongoClient
 
-app = Flask(__name__)
+application = Flask(__name__)
+app= application
 
 # MongoDB connection setup
 uri = "mongodb+srv://sandeepkr:sandeepkr@cluster0.0niktmf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
