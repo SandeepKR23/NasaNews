@@ -1,0 +1,11 @@
+pandas
+numpy
+ipykernel
+flask
+psycopg2
+pymongo
+bs4
+bs4
+flask-cors
+requests
+-e .

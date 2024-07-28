@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NASA News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .news-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .news-item a {
+            text-decoration: none;
+            color: #1a0dab;
+        }
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>NASA News 1</h1>
+    <div id="news-container">
+        {% for news in news_data %}
+        <div class="news-item">
+            <h2>{{ news.Id }}. <a href="{{ news.link }}" target="_blank">{{ news.title }}</a></h2>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
